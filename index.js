@@ -6,6 +6,10 @@ app.get("/", (req, res) => {
   res.send(process.env.MSG);
 });
 
+app.post("/", (req, res) => {
+  console.log(req.body);
+});
+
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
